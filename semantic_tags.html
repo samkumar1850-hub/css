@@ -1,51 +1,85 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hi-Tech Institute of Engineering and Technology</h1>
-        <p>B.Tech CSE (AI & ML)</p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#media">Media</a>
-        <a href="#location">Location</a>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About :-</h2>
-            <p>Hi-Tech Institute of Engineering and Technology is a Best Institute for (AI & ML) as It is Powered by Mirai School Of Technology. </p>
-            <article>
-                <h3>Why Choose Us ?</h3>
-                <p>Best Faculties, Modern Infrastructures & Best Placement Recods.</p>
-            </article>
-            
-        </section>
-        <section id="media">
-    <h2>Video</h2>
-    <video width="400" height="300" controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Bear Video.
-    </video>
-    <br>
-    <h2>Audio</h2>
-    <audio controls>
-       <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-        Birds Audio.
-    </audio>
-    <br>
-   <iframe
-    src="https://www.google.com/maps?q=Hi-Tech+Institute+of+Engineering+%26+Technology,+Plot+No.+766,+26th+KM+Milestone,+NH-9,+Ghaziabad,+Uttar+Pradesh+201015&output=embed"
-    width="600"
-    height="400"
-    title="Hi-Tech Institute of Engineering and Technology, Ghaziabad">
-</iframe>
-<p style='color:blue; font-size:16px;'>This is the homework of today's class topic "Media Elements" This assignment belongs to me.</p>
-<p>&copy; 2026 my College. All rights reserved.</p>
+  <header class="site-header">
+    <div class="container">
+      <h1>Hi-Tech Institute of Engineering and Technology</h1>
+      <p class="subtitle">B.Tech CSE (AI & ML)</p>
+    </div>
+  </header>
 
+  <nav class="main-nav">
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#media">Media</a>
+      <a href="#location">Location</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="intro" aria-label="Student introduction">
+      <p class="student-name">Name: Sumit Kumar Gupta</p>
+      <p>Age: 20 years</p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Hi-Tech Institute of Engineering and Technology is a leading institute for AI &amp; ML, powered by Mirai School of Technology.</p>
+
+      <article>
+        <h3>Why Choose Us?</h3>
+        <p>Best faculties, modern infrastructure, and excellent placement records.</p>
+      </article>
+    </section>
+
+    <section id="media">
+      <h2>Media</h2>
+
+      <div class="media-block">
+        <h3>Video</h3>
+        <video width="400" height="300" controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="media-block">
+        <h3>Audio</h3>
+        <audio controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </section>
+
+    <section id="location">
+      <h2>Location</h2>
+      <iframe
+        src="https://www.google.com/maps?q=Hi-Tech+Institute+of+Engineering+%26+Technology,+Plot+No.+766,+26th+KM+Milestone,+NH-9,+Ghaziabad,+Uttar+Pradesh+201015&output=embed"
+        width="100%"
+        height="400"
+        loading="lazy"
+        title="Hi-Tech Institute of Engineering and Technology, Ghaziabad">
+      </iframe>
+    </section>
+
+    <p class="assignment-note">This is the homework for today's class topic "Media Elements" and this assignment belongs to me.</p>
+  </main>
+  <div class="parent">
+  <p class="em-text">I use em</p>
+  <p class="rem-text">I use rem</p>
+</div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 My College. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
